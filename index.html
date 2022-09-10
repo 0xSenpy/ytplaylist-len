@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-900 font-mono">
+    <div class="bg-gray-800 opacity-100 mx-5 my-20 rounded-2xl border-4 border-green-400 lg:mx-24 lg:my-12 ">
+        <br><br>
+        <h1 class="text-center font-sans font-bold text-4xl lg:text-5xl text-green-400 mb-16">YouTube Playlist Length</h1>
+        <form class="flex justify-center">
+            <input type="text" id="playlistLink"
+                class="py-2 w-full mx-10 text-center bg-gray-700 border border-blue-200 text-white text-lg rounded-md placeholder-gray-400 px-2"
+                placeholder="YouTube Playlist Link" required>
+        </form>
+        <button onclick="getData()" class="bg-green-400 py-2 px-2 rounded-md text-lg font-medium flex mx-auto my-10 border-2 border-green-300 active:bg-green-900">Get
+            Length 🔍</button>
+
+        <br><br>
+        <img id="loader" src="loading.png" class="flex justify-center mx-auto animate-spin hidden" alt="">
+        <div id="output" class="text-center mx-1 w-full text-xl lg:text-2xl text-green-400">
+
+        </div>
+        <br><br>
+    </div>
+    <p class="text-center text-green-400">Made with ❤️ by <a href="https://senpy.me">Sarthak</a></p>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
